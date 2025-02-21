@@ -1,0 +1,22 @@
+.btn {
+  display: flex;
+  width: max-content;
+  line-height: 1.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--white-color);
+  padding: 1.4rem 2.4rem;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn--yellow {
+  background-color: var(--yellow-color);
+  color: var(--black-color);
+}
+
+.btn:hover {
+  background-color: var(--yellow-secondary);
+  color: var(--white-color);
+}

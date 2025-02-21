@@ -1,0 +1,14 @@
+.section-orders {
+  position: relative;
+}
+
+.orders {
+  text-align: center;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.orders__blast-img {
+  top: -14rem;
+  left: -10rem;
+}

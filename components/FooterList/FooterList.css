@@ -1,0 +1,18 @@
+.footer__list ul {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer__list li {
+  list-style: none;
+}
+.footer__list a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4rem;
+}
+.footer__list a:hover {
+  text-decoration: underline;
+}

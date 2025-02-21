@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+:root {
+  --primary-font: "Playfair Display", serif;
+  --secondary-font: "Clicker Script", serif;
+  --white-color: #f5f4f4;
+  --black-color: #1e1e1e;
+  --light-gray: #707070;
+  --yellow-color: #f9c06a;
+  --yellow-secondary: #603809;
+  --light-yellow: #fdecd2;
+  --lighter-yellow: #fff9f1;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 200;
+  color: var(--white-color);
+  overflow-x: hidden;
+}
+
+#app {
+  max-width: 180rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  background-image: url("../img/img-1.webp");
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 8rem;
+  margin: 0 auto;
+}
+
+@supports (background-image: url("image.webp")) {
+  main {
+    background-image: url("../img/img-1-light.webp");
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 100;
+}
+h1 {
+  font-family: var(--secondary-font);
+  font-size: 22rem;
+}
+
+.header::after,
+.footer__form::after,
+.section-cta::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.u-gray {
+  color: var(--light-gray);
+}
+
+.u-dark-yellow {
+  color: var(--yellow-secondary);
+}
+
+.u-white {
+  color: var(--white-color);
+}
+
+.secondary-title {
+  font-size: 5.4rem;
+  margin-bottom: 2.2rem;
+  font-weight: 600;
+}
+
+.tertiary-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.quintiary-title {
+  font-size: 3rem;
+}
+
+.quatertary-title {
+  font-size: 2.2rem;
+}
+.section {
+  background-color: var(--white-color);
+  padding: 12rem 8rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  margin-top: 3rem;
+  column-gap: 2rem;
+  row-gap: 4rem;
+}
+
+.blast-img {
+  width: 30%;
+  height: auto;
+  position: absolute;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(10px);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-duration: 1s;
+  transition-delay: calc(0.2s * var(--i));
+}
+
+.hidden-text {
+  transform: translateY(100%);
+}
+
+.hidden-img-left {
+  transform: translateX(-100%);
+}
+
+.hidden-img-right {
+  transform: translateX(100%);
+}
+
+.show {
+  transform: translate(0);
+  opacity: 1;
+  filter: blur(0);
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+  main {
+    padding: 2rem 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 42%;
+  }
+  main {
+    padding: 2rem 6rem;
+  }
+  .section {
+    padding: 6rem;
+  }
+
+  .blast-img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  main {
+    padding: 2rem 4rem;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  main {
+    padding: 2rem;
+  }
+
+  .blast-img {
+    width: 50%;
+  }
+}

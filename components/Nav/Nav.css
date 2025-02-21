@@ -1,0 +1,21 @@
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav__logo {
+  font-family: var(--secondary-font);
+  font-size: 5rem;
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.nav__item {
+  display: block;
+}
