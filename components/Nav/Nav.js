@@ -28,7 +28,7 @@ export const Nav = () => `
       </ul>
       <ul class="nav__links">
         <li class="nav__item">${Button({
-          url: "#",
+          url: "https://github.com/sarthak576",
           text: "Sign in",
           color: "trans",
         })}</li>
