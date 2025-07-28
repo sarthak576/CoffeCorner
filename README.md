@@ -37,4 +37,4 @@ JavaScript**.
 
 ## 📬 Contact
 
-[![LinkedIn](https://www.linkedin.com/in/sarthakgupta1702/)
+[LinkedIn](https://www.linkedin.com/in/sarthakgupta1702/)
