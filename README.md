@@ -31,7 +31,7 @@ JavaScript**.
 
 ## 🌐 **Project Link**
 
-🔗 [Live version](https://sweet-coffee-corner.vercel.app/)
+🔗 [Live version](https://coffe-corner.vercel.app/)
 
 ---
 
